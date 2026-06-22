@@ -36,11 +36,11 @@ export const Layout: React.FC<LayoutProps> = ({ children, setCurrentPage, curren
   const navStructure = [
     {
       id: 'about_group',
-      label: 'Про ліцей',
+      label: 'Про школу',
       items: [
         { label: 'Історія закладу', target: 'about-history' },
         { label: 'Місія та цінності', target: 'about-mission' },
-        { label: 'Символіка ліцею', target: 'about-symbols' },
+        { label: 'Символіка закладу', target: 'about-symbols' },
         { label: 'Матеріальна база', target: 'about-base' },
       ]
     },
@@ -136,8 +136,8 @@ export const Layout: React.FC<LayoutProps> = ({ children, setCurrentPage, curren
               </svg>
             </div>
             <div>
-              <h1 className="text-base sm:text-lg font-extrabold font-display leading-tight tracking-tight text-slate-900 dark:text-white flex items-center gap-1">
-                Павлівський ліцей
+              <h1 className="text-sm sm:text-base font-extrabold font-display leading-tight tracking-tight text-slate-900 dark:text-white flex items-center gap-1">
+                Заклад загальної середньої освіти І-ІІІ ст. <br className="sm:hidden" />с. Павлів
                 <Award className="w-4 h-4 text-school-yellow-500 shrink-0 hidden sm:inline" />
               </h1>
               <p className="text-[10px] text-slate-500 dark:text-slate-400 uppercase tracking-widest font-mono">віті-павлів • ЗЗСО І-ІІІ ступенів</p>
@@ -149,7 +149,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, setCurrentPage, curren
             <div className="relative w-full">
               <input 
                 type="text"
-                placeholder="Пошук по ліцею..."
+                placeholder="Пошук по школі..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full text-xs pl-8 pr-3 py-1.5 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-full focus:outline-hidden text-slate-800 dark:text-slate-100"
@@ -394,10 +394,10 @@ export const Layout: React.FC<LayoutProps> = ({ children, setCurrentPage, curren
                   <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-sm font-display leading-tight">Павлівський ліцей</h3>
+              <h3 className="font-bold text-xs uppercase tracking-wider text-slate-350 font-display leading-tight">Заклад загальної середньої освіти І-ІІІ ст. с. Павлів</h3>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Заклад загальної середньої освіти І-ІІІ ступенів с. Павлівка Волинської області. Надаємо якісну, сучасну, та безпечну освіту майбутньому поколінню України.
+              Заклад загальної середньої освіти І-ІІІ ступенів с. Павлів, Львівської області. Надаємо якісну, сучасну, та безпечну освіту майбутньому поколінню України.
             </p>
             <div className="space-y-1 text-xs">
               <span className="text-[10px] uppercase font-mono tracking-widest text-slate-500 block">Прямі посилання</span>
@@ -439,7 +439,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, setCurrentPage, curren
             <ul className="space-y-3 text-xs">
               <li className="flex items-start space-x-2.5">
                 <MapPin className="w-4 h-4 text-school-yellow-400 shrink-0" />
-                <span className="text-slate-400">вул. Шкільна, 4, с. Павлівка, Волинська область, 45342, Україна.</span>
+                <span className="text-slate-400">вул. Шкільна, 4, с. Павлів, Львівська область, 45342, Україна.</span>
               </li>
               <li className="flex items-center space-x-2.5">
                 <Phone className="w-4 h-4 text-school-yellow-400 shrink-0" />
@@ -510,7 +510,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, setCurrentPage, curren
 
         {/* Lower row */}
         <div className="max-w-7xl mx-auto pt-6 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 leading-relaxed text-center space-y-3 md:space-y-0">
-          <p>© {new Date().getFullYear()} Павлівський ліцей Волинської області. Всі права захищено відповідно до законодавства України.</p>
+          <p>© {new Date().getFullYear()} Заклад загальної середньої освіти І-ІІІ ст. с. Павлів. Всі права захищено відповідно до законодавства України.</p>
           <div className="flex space-x-4">
             <span className="hover:text-white cursor-pointer" onClick={() => handleNavClick('education-inclusive')}>Інклюзивна доступність WCAG</span>
             <span>•</span>

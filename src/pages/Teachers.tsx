@@ -23,7 +23,7 @@ export const Teachers: React.FC = () => {
       <div className="text-center">
         <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-slate-900 dark:text-white leading-tight">Педагогічний колектив</h1>
         <p className="text-xs text-slate-500 max-w-xl mx-auto mt-2.5">
-          Знайомтеся з нашими висококваліфікованими викладачами та класними керівниками Павлівського ліцею.
+          Знайомтеся з нашими висококваліфікованими викладачами та класними керівниками Закладу загальної середньої освіти І-ІІІ ст. с. Павлів.
         </p>
       </div>
 

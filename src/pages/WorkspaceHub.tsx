@@ -72,8 +72,8 @@ export const WorkspaceHub: React.FC = () => {
   const loadFallbackSchoolData = () => {
     // Elegant fallback data when not logged in to make the hub feel completely functional and illustrative
     setDriveFiles([
-      { id: '1', name: 'Річний_план_ліцей_2026.docx', mimeType: 'application/vnd.google-apps.document', size: '2.3 MB', modifiedTime: '2026-06-15T12:00:00Z', webViewLink: 'https://docs.google.com' },
-      { id: '2', name: 'Бюджет_Павлівського_Ліцею_2026.xlsx', mimeType: 'application/vnd.google-apps.spreadsheet', size: '1.1 MB', modifiedTime: '2026-06-10T09:42:00Z', webViewLink: 'https://docs.google.com/spreadsheets' },
+      { id: '1', name: 'Річний_план_школа_2026.docx', mimeType: 'application/vnd.google-apps.document', size: '2.3 MB', modifiedTime: '2026-06-15T12:00:00Z', webViewLink: 'https://docs.google.com' },
+      { id: '2', name: 'Бюджет_ЗЗСО_Павлів_2026.xlsx', mimeType: 'application/vnd.google-apps.spreadsheet', size: '1.1 MB', modifiedTime: '2026-06-10T09:42:00Z', webViewLink: 'https://docs.google.com/spreadsheets' },
       { id: '3', name: 'Презентація_НУШ_Нові_Стандарти.pptx', mimeType: 'application/vnd.google-apps.presentation', size: '14.5 MB', modifiedTime: '2026-05-24T18:15:00Z', webViewLink: 'https://docs.google.com/presentation' },
       { id: '4', name: 'Шкільна_фотогалерея_випускний.gdoc', mimeType: 'application/vnd.google-apps.document', size: '820 KB', modifiedTime: '2026-06-18T10:05:00Z', webViewLink: 'https://docs.google.com' }
     ]);
@@ -81,11 +81,11 @@ export const WorkspaceHub: React.FC = () => {
     setEmails([
       { id: 'm1', from: 'Міністерство Освіти <mon@gov.ua>', subject: 'Про затвердження навчальних планів на 2026/2027 н.р.', date: 'Сьогодні, 09:30', snippet: 'Шановні колеги! Надсилаємо для ознайомлення та врахування у роботі рекомендації...', body: 'Повний текст офіційного розпорядження про порядок ведення класних журналів у новому освітньому році.' },
       { id: 'm2', from: 'Секретар Департаменту <volyn-osvita@ukr.net>', subject: 'Запит фінансових звітів за ІІ квартал', date: 'Вчора, 15:40', snippet: 'Будь ласка, завантажте звіт про використання цільових бюджетних коштів на STEM до п’ятниці...', body: 'Необхідно надати розгорнутий кошторис на обладнання STEM засобів.' },
-      { id: 'm3', from: 'Марія Семенюк (Батьківський комітет)', subject: 'Організація випускного вечора 11-А класу', date: '16 червня', snippet: 'Вітаємо! Ми підготували погоджений план проведення урочистої частини свята на подвір’ї...', body: 'Батьківський актив пропонує провести випускний на відкритому ліцейному майданчику з дотриманням умов безпеки.' }
+      { id: 'm3', from: 'Марія Семенюк (Батьківський комітет)', subject: 'Організація випускного вечора 11-А класу', date: '16 червня', snippet: 'Вітаємо! Ми підготували погоджений план проведення урочистої частини свята на подвір’ї...', body: 'Батьківський актив пропонує провести випускний на відкритому шкільному майданчику з дотриманням умов безпеки.' }
     ]);
 
     setCalendarEvents([
-      { id: 'e1', title: 'Свято Останнього Дзвоника 2026', start: { dateTime: '2026-06-19T09:00:00+03:00' }, location: 'Ліцейне подвір’я', description: 'Урочиста лінійка, вітання випускників 11-х класів.' },
+      { id: 'e1', title: 'Свято Останнього Дзвоника 2026', start: { dateTime: '2026-06-19T09:00:00+03:00' }, location: 'Шкільне подвір’я', description: 'Урочиста лінійка, вітання випускників 11-х класів.' },
       { id: 'e2', title: 'Підсумкова Педагогічна Рада', start: { dateTime: '2026-06-23T11:00:00+03:00' }, location: 'STEM кабінет', description: 'Затвердження оцінок за ІІ семестр, річні звіти класних керівників.' },
       { id: 'e3', title: 'Зустріч з батьками першокласників', start: { dateTime: '2026-06-30T17:00:00+03:00' }, location: 'Актова зала', description: 'Психологічна готовність дитини до школи та правила прийому.' }
     ]);
@@ -105,7 +105,7 @@ export const WorkspaceHub: React.FC = () => {
     ]);
 
     setDocuments([
-      { id: '1', name: 'Статут_Ліцею_НоваРедакція', modifiedTime: '2026-06-12' },
+      { id: '1', name: 'Статут_Школи_НоваРедакція', modifiedTime: '2026-06-12' },
       { id: '4', name: 'Правила_внутрішнього_розпорядку', modifiedTime: '2026-05-10' }
     ]);
 
@@ -169,7 +169,7 @@ export const WorkspaceHub: React.FC = () => {
     setToken('');
     setIsAuthenticated(false);
     loadFallbackSchoolData();
-    setSuccessMsg('Вихід успішний. Переключено на демонстраційний режим ліцею.');
+    setSuccessMsg('Вихід успішний. Переключено на демонстраційний режим школи.');
     setTimeout(() => setSuccessMsg(null), 3000);
   };
 
@@ -542,7 +542,7 @@ export const WorkspaceHub: React.FC = () => {
             Google Workspace Портал
           </h1>
           <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-            Керуйте навчальними матеріалами ліцею, офіційними листами та календарем у хмарі Google.
+            Керуйте навчальними матеріалами школи, офіційними листами та календарем у хмарі Google.
           </p>
         </div>
 
@@ -599,13 +599,13 @@ export const WorkspaceHub: React.FC = () => {
               Інструкція з налаштування Google Cloud OAuth
             </h3>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
-              Цей додаток інтегрується з хмарою вашого ліцею. Для роботи з користувацькими даними (Drive, Gmail, Calendar, Sheets) ви можете використовувати ваш унікальний <strong>Google Client ID</strong> або залишити поле порожнім для використання типового клієнтського ключа за замовчуванням.
+              Цей додаток інтегрується з хмарою вашої школи. Для роботи з користувацькими даними (Drive, Gmail, Calendar, Sheets) ви можете використовувати ваш унікальний <strong>Google Client ID</strong> або залишити поле порожнім для використання типового клієнтського ключа за замовчуванням.
             </p>
             <div className="bg-slate-50 dark:bg-slate-950 p-4 rounded-xl text-xs text-slate-500 dark:text-slate-400 space-y-2 border border-slate-200/50">
               <span className="font-bold text-slate-700 dark:text-slate-300 font-sans">Як отримати ключ клієнта:</span>
               <ol className="list-decimal list-inside space-y-1 ml-1 text-[11px] leading-relaxed">
                 <li>Перейдіть у <a href="https://console.cloud.google.com" target="_blank" rel="noopener" className="text-school-blue-500 hover:underline inline-flex items-center gap-0.5 font-bold">Google Cloud Console ↗</a>.</li>
-                <li>Створіть або оберіть ваш проект (наприклад, Lyceum Portal).</li>
+                <li>Створіть або оберіть ваш проект (наприклад, School Portal).</li>
                 <li>Перейдіть у розділ <strong>APIs & Services &gt; Credentials</strong>.</li>
                 <li>Натисніть <strong>Create Credentials &gt; OAuth client ID</strong> (оберіть тип "Web Application").</li>
                 <li>Додайте <i>{window.location.origin}</i> до розділу <strong>Authorized JavaScript origins</strong>.</li>
@@ -698,7 +698,7 @@ export const WorkspaceHub: React.FC = () => {
         {!isAuthenticated && (
           <div className="bg-amber-500/5 border border-amber-500/10 rounded-xl p-4 text-[11px] text-amber-600/90 dark:text-amber-400/80 flex items-center gap-2 mb-6">
             <HelpCircle className="w-4 h-4 shrink-0 text-amber-500" />
-            <span>Ви переглядаєте <strong>демонстраційний режим</strong> Павлівського ліцею з наочними пре-сетами. Підключіть ваш реальний Google акаунт за допомогою синьої кнопки для завантаження та редагування ваших особистих хмарних ресурсів.</span>
+            <span>Ви переглядаєте <strong>демонстраційний режим</strong> Закладу загальної середньої освіти І-ІІІ ст. с. Павлів з наочними пре-сетами. Підключіть ваш реальний Google акаунт за допомогою синьої кнопки для завантаження та редагування ваших особистих хмарних ресурсів.</span>
           </div>
         )}
 
@@ -771,7 +771,7 @@ export const WorkspaceHub: React.FC = () => {
                 Створити новий документ
               </h3>
               <p className="text-[11px] text-slate-400 leading-relaxed">
-                Швидке створення освітніх бланків чи розрахункових таблиць безпосередньо у хмарі ліцею.
+                Швидке створення освітніх бланків чи розрахункових таблиць безпосередньо у хмарі школи.
               </p>
 
               <form onSubmit={handleCreateFileOnDrive} className="space-y-3">
@@ -819,9 +819,9 @@ export const WorkspaceHub: React.FC = () => {
               <span className="font-bold text-slate-800 dark:text-white text-xs block mb-1">Скринька Хмарної Пошти</span>
               
               {emails.length === 0 ? (
-                <div className="bg-white dark:bg-slate-900 border border-slate-250 dark:border-slate-800 p-8 rounded-xl text-center text-xs text-slate-500">
+                <div className="bg-white dark:bg-slate-900 border border-slate-250 dark:border-slate-800 p-8 rounded-xl text-center text-xs text-slate-500 font-light">
                   <Mail className="w-10 h-10 mx-auto text-slate-300 dark:text-slate-750 mb-2" />
-                  <p>Ваша ліцейна пошта наразі порожня.</p>
+                  <p>Ваша шкільна пошта наразі порожня.</p>
                 </div>
               ) : (
                 <div className="bg-white dark:bg-slate-900 border border-slate-150 dark:border-slate-800 rounded-xl divide-y divide-slate-150 dark:divide-slate-800 overflow-hidden shadow-xs">
@@ -1074,7 +1074,7 @@ export const WorkspaceHub: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Calendar Event Schedule List */}
             <div className="lg:col-span-2 space-y-4">
-              <span className="font-bold text-slate-800 dark:text-white text-xs block mb-1">Заплановані заходи ліцею у Календарі</span>
+              <span className="font-bold text-slate-800 dark:text-white text-xs block mb-1">Заплановані заходи школи у Календарі</span>
 
               {calendarEvents.length === 0 ? (
                 <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-xl text-center text-xs text-slate-500">

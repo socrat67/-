@@ -10,7 +10,7 @@ export const Gallery: React.FC = () => {
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
 
   // Dynamic tabs
-  const albums = ['All', 'Наш Ліцей', 'Навчальний Процес', 'Свята та Фестивалі', 'Спорт та Дозвілля', 'Відеоархів'];
+  const albums = ['All', 'Наша Школа', 'Навчальний Процес', 'Свята та Фестивалі', 'Спорт та Дозвілля', 'Відеоархів'];
 
   const filteredItems = gallery.filter((item) => {
     if (filter === 'All') return true;
@@ -22,9 +22,9 @@ export const Gallery: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1 space-y-8">
       {/* Page header */}
       <div className="text-center">
-        <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-slate-900 dark:text-white leading-tight">Медіагалерея ліцею</h1>
+        <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-slate-900 dark:text-white leading-tight">Медіагалерея школи</h1>
         <p className="text-xs text-slate-500 max-w-xl mx-auto mt-2.5">
-          Пориньте у яскраву атмосферу наших буднів, унікальних уроків та святкових ліцейних концертів у Павлові.
+          Пориньте у яскраву атмосферу наших буднів, унікальних уроків та святкових шкільних концертів у Павлові.
         </p>
       </div>
 

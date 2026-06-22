@@ -28,7 +28,7 @@ export const Students: React.FC<{ initialSection?: string }> = ({ initialSection
       <div className="text-center">
         <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-slate-900 dark:text-white leading-tight">Куточок учня</h1>
         <p className="text-xs text-slate-500 max-w-xl mx-auto mt-2.5">
-          Вся необхідна інформація для комфортного навчання в Павлівському ліцеї: розклади дзвінків, олімпіади та матеріали для дистанційних занять.
+          Вся необхідна інформація для комфортного навчання в Закладі загальної середньої освіти І-ІІІ ст. с. Павлів: розклади дзвінків, олімпіади та матеріали для дистанційних занять.
         </p>
       </div>
 
@@ -101,11 +101,11 @@ export const Students: React.FC<{ initialSection?: string }> = ({ initialSection
               <div>
                 <h3 className="font-bold text-xs uppercase tracking-wide text-slate-800 dark:text-slate-200 mb-2">Навчальний тиждень: Двотижнева сітка</h3>
                 <p className="text-xs text-slate-500 leading-relaxed font-light">
-                  Павлівський ліцей працює за 5-денним робочим регламентом. Усі класи поділяються на підгрупи при вивченні іноземних мов, інформатики та фізичної культури.
+                  Заклад загальної середньої освіти І-ІІІ ст. с. Павлів працює за 5-денним робочим регламентом. Усі класи поділяються на підгрупи при вивченні іноземних мов, інформатики та фізичної культури.
                 </p>
                 <div className="mt-4 p-3 bg-white dark:bg-slate-900 rounded-lg border flex items-center gap-3">
                   <Volume2 className="w-5 h-5 text-school-yellow-500 shrink-0" />
-                  <span className="text-[11px] text-slate-450">Звук дзвінка у ліцеї подається автоматизованою музичною цифровою системою «Шкільний вальс».</span>
+                  <span className="text-[11px] text-slate-450">Звук дзвінка у закладі подається автоматизованою музичною цифровою системою «Шкільний вальс».</span>
                 </div>
               </div>
               
@@ -116,7 +116,7 @@ export const Students: React.FC<{ initialSection?: string }> = ({ initialSection
                   rel="noopener noreferrer"
                   className="bg-school-blue-600 hover:bg-school-blue-700 text-white font-bold text-xs py-2.5 px-4 rounded-lg block text-center shadow-xs cursor-pointer"
                 >
-                  Переглянути повну сітку розкладу уроків ліцею на Google Drive ↗
+                  Переглянути повну сітку розкладу уроків закладу на Google Drive ↗
                 </a>
               </div>
             </div>
@@ -131,7 +131,7 @@ export const Students: React.FC<{ initialSection?: string }> = ({ initialSection
           >
             <h2 className="text-sm font-bold font-display text-slate-900 dark:text-white mb-2">Дистанційна та змішана освіта</h2>
             <p className="text-xs text-slate-500 leading-relaxed font-light">
-              На випадок повітряних тривог, карантинних обмежень або несприятливих погодних умов у Павлівському ліцеї впроваджено повноцінне електронне середовище навчання. Ми використовуємо ліцензійні сервіси Google Workspace for Education.
+              На випадок повітряних тривог, карантинних обмежень або несприятливих погодних умов у Закладі загальної середньої освіти І-ІІІ ст. с. Павлів впроваджено повноцінне електронне середовище навчання. Ми використовуємо ліцензійні сервіси Google Workspace for Education.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
@@ -167,7 +167,7 @@ export const Students: React.FC<{ initialSection?: string }> = ({ initialSection
               Шкільні олімпіади та творчі конкурси 2026 н.р.
             </h2>
             <p className="text-xs text-slate-500">
-              Шановні ліцеїсти, починається реєстрація на Всеукраїнські предметні олімпіади. Нижче наведено перелік районних етапів. Звертайтеся до вчителів-предметників для включення у списки учасників.
+              Шановні учні, починається реєстрація на Всеукраїнські предметні олімпіади. Нижче наведено перелік районних етапів. Звертайтеся до вчителів-предметників для включення у списки учасників.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -198,10 +198,10 @@ export const Students: React.FC<{ initialSection?: string }> = ({ initialSection
                 </h2>
                 <div className="space-y-3.5 text-xs text-slate-650 dark:text-slate-350 leading-relaxed font-light">
                   <p>
-                    Самоврядування ліцею – це орган дитячого волевиявлення, що захищає та реалізує інтереси молоді. Наш президент обирається шляхом таємного загального голосування серед учнів 8-11 класів строком на 1 навчальний рік.
+                    Самоврядування школи – це орган дитячого волевиявлення, що захищає та реалізує інтереси молоді. Наш президент обирається шляхом таємного загального голосування серед учнів 8-11 класів строком на 1 навчальний рік.
                   </p>
                   <p>
-                    <strong>Головні напрямки діяльності «Світанок»:</strong> організація спортивних чемпіонатів на шкільному подвір’ї, благодійні акції на допомогу ЗСУ, видавництво шкільної газети «Голос Ліцею» та координація тематичних дискотек і літературних вечорів.
+                    <strong>Головні напрямки діяльності «Світанок»:</strong> організація спортивних чемпіонатів на шкільному подвір’ї, благодійні акції на допомогу ЗСУ, видавництво шкільної газети «Шкільний Голос» та координація тематичних дискотек і літературних вечорів.
                   </p>
                 </div>
               </div>

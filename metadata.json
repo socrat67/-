@@ -1,6 +1,6 @@
 {
-  "name": "Павлівський ліцей",
-  "description": "Сучасний офіційний вебпортал Павлівського ліцею Волинської області",
+  "name": "ЗЗСО І-ІІІ ст. с. Павлів",
+  "description": "Сучасний офіційний вебпортал Закладу загальної середньої освіти І-ІІІ ст. с. Павлів",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

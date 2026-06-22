@@ -41,7 +41,7 @@ export const NewsList: React.FC = () => {
       <div className="text-center">
         <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-slate-900 dark:text-white leading-tight">Стрічка новин та Оголошень</h1>
         <p className="text-xs text-slate-500 max-w-xl mx-auto mt-2.5">
-          Стежте за останніми заходами, святами, зборами та перемогами учнівського та педагогічного колективів Павлівського ліцею.
+          Стежте за останніми заходами, святами, зборами та перемогами учнівського та педагогічного колективів Закладу загальної середньої освіти І-ІІІ ст. с. Павлів.
         </p>
       </div>
 
@@ -171,7 +171,7 @@ export const NewsList: React.FC = () => {
               </div>
 
               <div className="p-4 border-t bg-slate-50 dark:bg-slate-950 flex items-center justify-between text-xs text-slate-400">
-                <span>Життя Павлівського Ліцею • {new Date().getFullYear()}</span>
+                <span>Життя ЗЗСО І-ІІІ ст. с. Павлів • {new Date().getFullYear()}</span>
                 <span>{expandedNews.views} переглядів</span>
               </div>
             </motion.div>

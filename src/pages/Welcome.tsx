@@ -66,7 +66,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
               id="hero-community-badge"
             >
               <Sparkles className="w-3.5 h-3.5 text-school-yellow-400" />
-              <span>Павлівська громада • Волинська область</span>
+              <span>Радехівська громада • Львівська область</span>
             </motion.div>
 
             <motion.h1 
@@ -76,7 +76,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
               className="text-3xl sm:text-5xl md:text-6xl font-extrabold font-display leading-tight tracking-tight max-w-3xl"
               id="hero-title"
             >
-              Павлівський ліцей 
+              Заклад загальної середньої освіти І-ІІІ ст. с. Павлів 
               <span className="text-school-yellow-400 italic block mt-2 text-2xl sm:text-4xl">Традиції. Якість. Майбутнє.</span>
             </motion.h1>
 
@@ -110,7 +110,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
                 className="bg-white/10 hover:bg-white/15 text-white font-bold px-6 py-3.5 rounded-xl text-xs transition-all flex items-center justify-center space-x-2 border border-white/20 cursor-pointer backdrop-blur-xs hover:border-white/30"
                 id="cta-news"
               >
-                <span>Новини ліцею</span>
+                <span>Новини школи</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </motion.div>
@@ -121,7 +121,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
       {/* 2. Core Bento Grid Showcase Section */}
       <section className="max-w-7xl mx-auto w-full px-4" id="main-bento-section">
         <div className="text-center mb-8">
-          <span className="text-xs font-semibold uppercase tracking-widest text-school-blue-500 bg-school-blue-50 dark:bg-slate-900 px-3 py-1.5 rounded-full border border-slate-200/50 dark:border-slate-800">Навігатор ліцейного простору</span>
+          <span className="text-xs font-semibold uppercase tracking-widest text-school-blue-500 bg-school-blue-50 dark:bg-slate-900 px-3 py-1.5 rounded-full border border-slate-200/50 dark:border-slate-800">Навігатор шкільного простору</span>
           <h2 className="text-2xl sm:text-3xl font-extrabold font-display text-slate-900 dark:text-white mt-3 tracking-tight">Життя та інфраструктура нашого закладу</h2>
         </div>
 
@@ -137,7 +137,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
                 </span>
               </div>
               <blockquote className="text-sm font-light text-slate-650 dark:text-slate-300 leading-relaxed italic border-l-2 border-school-blue-500 pl-4 py-1">
-                "Кожен учень нашого ліцею – це маленьке індивідуальне сузір'я, талант якого ми прагнемо підтримати та розвинути. Ми формуємо м’які навички (soft skills), інформаційну компетентність та дух свободи в кожному серці!"
+                "Кожен учень нашої школи – це маленьке індивідуальне сузір'я, талант якого ми прагнемо підтримати та розвинути. Ми формуємо м’які навички (soft skills), інформаційну компетентність та дух свободи в кожному серці!"
               </blockquote>
               <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
                 Школа – це живий організм взаємонавчання та безпеки. Орієнтуємо навчальний процес на розвиток екологічної свідомості й патріотизму для майбутнього вільної України.
@@ -154,7 +154,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
               </div>
               <div>
                 <h4 className="font-bold text-xs text-slate-800 dark:text-white leading-tight">Татарчук Любов Миколаївна</h4>
-                <p className="text-[10px] text-slate-400 mt-0.5 uppercase tracking-wider font-mono">Директорка ліцею, кандидатка пед. наук</p>
+                <p className="text-[10px] text-slate-400 mt-0.5 uppercase tracking-wider font-mono">Директорка школи, кандидатка пед. наук</p>
               </div>
             </div>
           </div>
@@ -293,7 +293,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
               </div>
 
               <p className="text-[10px] text-slate-400 leading-normal font-light pt-2 border-t border-slate-800/60">
-                За результатами щорічного НМТ-рейтингу, ліцей входить до когорти найсильніших сільських навчальних закладів Волинської області.
+                За результатами щорічного НМТ-рейтингу, школа входить до когорти найсильніших сільських навчальних закладів Львівської області.
               </p>
             </div>
           </div>
@@ -309,7 +309,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
           <div className="flex items-center justify-between pb-3 border-b border-slate-200/60 dark:border-slate-800/60">
             <div>
               <h2 className="text-xl font-bold text-slate-900 dark:text-white font-display tracking-tight">Стрічка оголошень та подій</h2>
-              <p className="text-xs text-slate-500 mt-1">Життя ліцею, корисні заходи та досягнення учнів у режимі реального часу.</p>
+              <p className="text-xs text-slate-500 mt-1">Життя закладу, корисні заходи та досягнення учнів у режимі реального часу.</p>
             </div>
             <button 
               onClick={() => { setCurrentPage('news'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
@@ -390,7 +390,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
               onClick={() => { setCurrentPage('contacts'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
               className="text-xs font-bold text-school-blue-600 hover:text-school-blue-700 dark:text-school-blue-300 dark:hover:text-school-blue-400 mt-3.5 flex items-center gap-1 cursor-pointer"
             >
-              <span>Подати запит до ліцею</span>
+              <span>Подати запит до школи</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>
@@ -408,16 +408,16 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
               Офіційна онлайн-приймальня
             </h2>
             <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-light">
-              Маєте пропозиції чи важливе звернення до ліцею? Надішліть свій лист безпосередньо Любові Миколаївні Татарчук. Відповідно до Закону України «Про звернення громадян», кожне офіційне повідомлення фіксується у внутрішній системі обліку та опрацьовується протягом одного робочого дня.
+              Маєте пропозиції чи важливе звернення до школи? Надішліть свій лист безпосередньо Любові Миколаївні Татарчук. Відповідно до Закону України «Про звернення громадян», кожне офіційне повідомлення фіксується у внутрішній системі обліку та опрацьовується протягом одного робочого дня.
             </p>
             <div className="space-y-2 pt-3">
               <div className="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-400">
                 <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Офіційна державна електронна черга Павлівки.</span>
+                <span>Офіційна державна електронна черга с. Павлів.</span>
               </div>
               <div className="flex items-center gap-2.5 text-xs text-slate-600 dark:text-slate-400">
                 <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Захист персональних даних гарантується ліцеєм.</span>
+                <span>Захист персональних даних гарантується закладом.</span>
               </div>
             </div>
           </div>
@@ -472,7 +472,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ setCurrentPage }) => {
                   </div>
                 </div>
                 <div>
-                  <label className="block text-[10px] uppercase font-bold tracking-wider text-slate-500 mb-1">Суть вашого звернення до ліцею *</label>
+                  <label className="block text-[10px] uppercase font-bold tracking-wider text-slate-500 mb-1">Суть вашого звернення до школи *</label>
                   <textarea 
                     required 
                     rows={4}

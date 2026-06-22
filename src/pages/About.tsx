@@ -9,7 +9,7 @@ export const About: React.FC<{ initialSubTab?: string }> = ({ initialSubTab = 'h
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1 flex flex-col">
       {/* Title block */}
       <div className="mb-10 text-center">
-        <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-slate-900 dark:text-white leading-tight">Про наш Павлівський ліцей</h1>
+        <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-slate-900 dark:text-white leading-tight">Про наш заклад освіти</h1>
         <p className="text-xs text-slate-500 max-w-xl mx-auto mt-2.5">
           Дізнайтеся більше про багату історію закладу з моменту заснування, наші європейські цінності та сучасне технічне забезпечення.
         </p>
@@ -33,7 +33,7 @@ export const About: React.FC<{ initialSubTab?: string }> = ({ initialSubTab = 'h
           onClick={() => setActiveTab('symbols')}
           className={`py-3 px-4 border-b-2 transition-all cursor-pointer ${activeTab === 'symbols' ? 'border-school-blue-500 text-school-blue-600 font-bold' : 'border-transparent text-slate-500 hover:text-slate-800'}`}
         >
-          Символіка ліцею
+          Символіка закладу
         </button>
         <button
           onClick={() => setActiveTab('base')}
@@ -51,20 +51,17 @@ export const About: React.FC<{ initialSubTab?: string }> = ({ initialSubTab = 'h
             animate={{ opacity: 1, y: 0 }}
             className="space-y-6"
           >
-            <div className="flex flex-col lg:flex-row gap-8 items-center">
-              <div className="space-y-4 lg:w-2/3">
-                <h2 className="text-xl font-bold font-display text-slate-900 dark:text-white">Шлях довжиною у десятиліття</h2>
-                <div className="space-y-3 text-xs text-slate-650 dark:text-slate-350 leading-relaxed font-light">
-                  <p>
-                    Історія нашого закладу освіти нерозривно пов'язана зі становленням громади мальовничого села Павлівка. Першу трикласну школу в селі було засновано ще в далекому минулому столітті, коли спрагла до науки дітвора тулилася в невеликих найманих хатинах.
-                  </p>
-                  <p>
-                    У наступні радянські часи відбулася розбудова нової будівлі школи, яка в подальшому перетворилася на загальноосвітню школу І-ІІІ ступенів. Здобуття Україною Незалежності вдихнуло нове європейське життя в класи нашого закладу: ми модернізували кабінети, перейшли на сучасні стандарти викладання та інтегрували вільні творчі підходи.
-                  </p>
-                  <p>
-                    У 2021 році, відповідно до вимог освітньої реформи в Україні, Павлівська загальноосвітня школа І-ІІІ ступенів отримала почесний статус <strong>Павлівського ліцею</strong>. Сьогодні це опорний заклад, який об’єднує навколо себе талановиту учнівську молодь та пропонує передові СТЕМ-технології, комп’ютеризовані бази та індивідуальні освітні траєкторії.
-                  </p>
-                </div>
+            <div className="flex flex-col lg:flex-row gap-8 items-center bg-transparent">
+              <div className="lg:w-2/3 space-y-3 text-xs text-slate-650 dark:text-slate-350 leading-relaxed font-light font-sans">
+                <p>
+                  Історія нашого закладу освіти нерозривно пов'язана зі становленням громади мальовничого села Павлів. Першу трикласну школу в селі було засновано ще в далекому минулому столітті, коли спрагла до науки дітвора тулилася в невеликих найманих хатинах.
+                </p>
+                <p>
+                  У наступні десятиліття відбулася розбудова нової будівлі школи, яка в подальшому перетворилася на загальноосвітню школу І-ІІІ ступенів. Здобуття Україною Незалежності вдихнуло нове життя в класи нашого закладу: ми модернізували кабінети, перейшли на сучасні стандарти викладання та інтегрували вільні творчі підходи.
+                </p>
+                <p>
+                  У 2021 році, відповідно до вимог освітньої реформи в Україні, Павлівська загальноосвітня школа І-ІІІ ступенів отримала статус <strong>Закладу загальної середньої освіти І-ІІІ ст. с. Павлів</strong>. Сьогодні це опорний заклад, який об’єднує навколо себе талановиту учнівську молодь та пропонує передові СТЕМ-технології, комп’ютеризовані бази та індивідуальні освітні траєкторії.
+                </p>
               </div>
               <div className="lg:w-1/3 w-full h-64 rounded-2xl overflow-hidden shadow-md">
                 <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=500" alt="Стара школа" className="w-full h-full object-cover" />
@@ -72,7 +69,7 @@ export const About: React.FC<{ initialSubTab?: string }> = ({ initialSubTab = 'h
             </div>
 
             <div className="bg-slate-50 dark:bg-slate-950 p-5 rounded-2xl border border-slate-100 dark:border-slate-800">
-              <h3 className="font-bold text-xs font-display text-slate-800 dark:text-white uppercase tracking-wider mb-3">Видатні випускники ліцею</h3>
+              <h3 className="font-bold text-xs font-display text-slate-800 dark:text-white uppercase tracking-wider mb-3">Видатні випускники школи</h3>
               <p className="text-xs text-slate-500 leading-relaxed">
                 За роки роботи школа гордо випустила сотні професіоналів свого діла. Наші вихованці сьогодні стоять на варті миру у Збройних Силах України, викладають у провідних вузах країни, очолюють IT-корпорації та розбудовують аграрний сектор Волині.
               </p>
@@ -87,7 +84,7 @@ export const About: React.FC<{ initialSubTab?: string }> = ({ initialSubTab = 'h
             className="space-y-8"
           >
             <div>
-              <h2 className="text-xl font-bold font-display text-slate-900 dark:text-white text-center mb-6">Місія, візія та цінності нашого ліцею</h2>
+              <h2 className="text-xl font-bold font-display text-slate-900 dark:text-white text-center mb-6">Місія, візія та цінності нашої школи</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="p-6 bg-school-blue-50/50 dark:bg-school-blue-950/20 border border-school-blue-100 rounded-2xl space-y-3">
                   <div className="w-10 h-10 bg-school-blue-600 text-white rounded-lg flex items-center justify-center">
@@ -105,7 +102,7 @@ export const About: React.FC<{ initialSubTab?: string }> = ({ initialSubTab = 'h
                   </div>
                   <h3 className="font-bold text-xs uppercase tracking-wider text-school-yellow-800 dark:text-school-yellow-200">Наша Візія</h3>
                   <p className="text-xs text-slate-650 dark:text-slate-350 leading-relaxed">
-                    Павлівський ліцей - це високотехнологічний освітній хаб Волинської області, що випускає всебічно розвинених лідерів, здатних до безперервного самонавчання протягом усього життя, вільних від стереотипів та готових створювати інновації.
+                    Заклад загальної середньої освіти І-ІІІ ст. с. Павлів - це високотехнологічний освітній хаб Львівської області, що випускає всебічно розвинених лідерів, здатних до безперервного самонавчання протягом усього життя, вільних від стереотипів та готових створювати інновації.
                   </p>
                 </div>
               </div>
@@ -142,16 +139,16 @@ export const About: React.FC<{ initialSubTab?: string }> = ({ initialSubTab = 'h
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div className="space-y-4">
-                <h2 className="text-xl font-bold font-display text-slate-900 dark:text-white">Символіка Павлівського ліцею</h2>
+                <h2 className="text-xl font-bold font-display text-slate-900 dark:text-white">Символіка Закладу загальної середньої освіти І-ІІІ ст. с. Павлів</h2>
                 <div className="space-y-3.5 text-xs text-slate-650 dark:text-slate-350 leading-relaxed font-light">
                   <p>
-                    <strong>Герб ліцею</strong> представляє собою щит, розколотий на синю та жовту частини, де зображена відкрита книга знань у світлі променів вранішнього сонця Волині. Вінок з дубового листя внизу символізує міцність духу та традиції довголіття нашої сільської громади.
+                    <strong>Герб школи</strong> представляє собою щит, розколотий на синю та жовту частини, де зображена відкрита книга знань у світлі променів вранішнього сонця Волині. Вінок з дубового листя внизу символізує міцність духу та традиції довголіття нашої сільської громади.
                   </p>
                   <p>
-                    <strong>Прапор ліцею</strong> – синє полотнище із золотою облямівкою та гербом у центрі. Він гордо підіймається під час Свята Першого та Останнього дзвоників.
+                    <strong>Прапор закладу</strong> – синє полотнище із золотою облямівкою та гербом у центрі. Він гордо підіймається під час Свята Першого та Останнього дзвоників.
                   </p>
                   <p>
-                    <strong>Гімн ліцею</strong> написаний нашими талановитими педагогами спільно з випускниками та звучить на кожному шкільному фестивалі як символ нашої вічної освітньої дружби та патріотизму.
+                    <strong>Гімн закладу</strong> написаний нашими талановитими педагогами спільно з випускниками та звучить на кожному шкільному фестивалі як символ нашої вічної освітньої дружби та патріотизму.
                   </p>
                 </div>
               </div>
@@ -181,7 +178,7 @@ export const About: React.FC<{ initialSubTab?: string }> = ({ initialSubTab = 'h
           >
             <h2 className="text-xl font-bold font-display text-slate-900 dark:text-white">Наша матеріально-технічна база</h2>
             <p className="text-xs text-slate-500">
-              Ліцей регулярно оновлює свою технічну інфраструктуру, щоб відповідати всім державним ліцензійним та безпековим нормам Міністерства освіти України.
+              Школа регулярно оновлює свою технічну інфраструктуру, щоб відповідати всім державним ліцензійним та безпековим нормам Міністерства освіти України.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -212,7 +209,7 @@ export const About: React.FC<{ initialSubTab?: string }> = ({ initialSubTab = 'h
 
             <div className="bg-school-yellow-50/20 dark:bg-slate-905 p-5 rounded-2xl border border-school-yellow-200 text-xs">
               <span className="font-bold text-slate-700 dark:text-slate-300 block mb-1">Інспекція готовності закладу:</span>
-              <p className="text-slate-500 text-[11px]">Павлівський ліцей пройшов повну державну сертифікацію та атестацію готовності будівель, спортивного майданчика зі штучним покриттям та кабінетів початкових класів НУШ до 2026/2027 навчального року.</p>
+              <p className="text-slate-500 text-[11px]">Заклад загальної середньої освіти І-ІІІ ст. с. Павлів пройшов повну державну сертифікацію та атестацію готовності будівель, спортивного майданчика зі штучним покриттям та кабінетів початкових класів НУШ до 2026/2027 навчального року.</p>
             </div>
           </motion.div>
         )}

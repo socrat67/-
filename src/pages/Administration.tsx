@@ -6,7 +6,7 @@ export const Administration: React.FC = () => {
   const admins = [
     {
       name: 'Татарчук Любов Миколаївна',
-      role: 'Директорка Павлівського ліцею',
+      role: 'Директорка ЗЗСО І-ІІІ ст. с. Павлів',
       photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=350',
       education: 'Кандидатка педагогічних наук, вчителька вищої категорії, педагогічний досвід — 31 рік',
       awards: 'Нагрудний знак «Відмінник освіти України», Грамота МОН України',
@@ -18,7 +18,7 @@ export const Administration: React.FC = () => {
       role: 'Заступник директора з навчально-виховної роботи',
       photo: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=350',
       education: 'Житомирський педагогічний інститут, вчитель математики вищої категорії, стаж — 24 роки',
-      awards: 'Грамота обласного управління освіти Волинської ОДА',
+      awards: 'Грамота обласного управління освіти Львівської ОДА',
       phone: '+38 (097) 987-65-43',
       email: 'a.mykhailiuk@pavliv.school.ukr.education'
     },
@@ -27,7 +27,7 @@ export const Administration: React.FC = () => {
       role: 'Заступниця директора з виховної роботи',
       photo: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=350',
       education: 'Рівненський університет, вчителька початкових класів та музики, стаж — 19 років',
-      awards: 'Подяка Павлівського сільського голови',
+      awards: 'Подяка Радехівського міського голови',
       phone: '+38 (050) 456-78-90',
       email: 'h.panasiuk@pavliv.school.ukr.education'
     }
@@ -37,7 +37,7 @@ export const Administration: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1 space-y-12">
       {/* Page Heading */}
       <div className="text-center">
-        <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-slate-900 dark:text-white leading-tight">Адміністрація ліцею</h1>
+        <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-slate-900 dark:text-white leading-tight">Адміністрація закладу</h1>
         <p className="text-xs text-slate-500 max-w-xl mx-auto mt-2.5">
           Керівний склад закладу, який щодня забезпечує високі стандарти навчального, морального та безпекового процесу учнів.
         </p>
@@ -93,7 +93,7 @@ export const Administration: React.FC = () => {
           </div>
           <h2 className="text-xl font-bold font-display text-slate-900 dark:text-white">Графік особистого прийому громадян адміністрацією</h2>
           <p className="text-xs text-slate-500 leading-relaxed font-light">
-            Ми завжди відкриті для відвертого діалогу, зауважень, консультацій та ідей. Особистий прийом проводиться в кабінетах адміністрації на першому поверсі ліцейного корпусу у визначені години. Для попереднього запису ви можете звернутися до секретаря за номером ліцею.
+            Ми завжди відкриті для відвертого діалогу, зауважень, консультацій та ідей. Особистий прийом проводиться в кабінетах адміністрації на першому поверсі шкільного корпусу у визначені години. Для попереднього запису ви можете звернутися до секретаря за номером школи.
           </p>
         </div>
 
@@ -108,7 +108,7 @@ export const Administration: React.FC = () => {
             </thead>
             <tbody className="divide-y divide-slate-150 dark:divide-slate-800 text-slate-705 dark:text-slate-305">
               <tr>
-                <td className="py-3 px-4 font-semibold">Директор ліцею</td>
+                <td className="py-3 px-4 font-semibold">Директор школи</td>
                 <td className="py-3 px-4">Вівторок, Четвер</td>
                 <td className="py-3 px-4 font-mono">09:00 - 12:00</td>
               </tr>

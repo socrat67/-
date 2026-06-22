@@ -42,7 +42,7 @@ export const ContactsPage: React.FC = () => {
       <div className="text-center">
         <h1 className="text-2xl sm:text-4xl font-extrabold font-display text-slate-900 dark:text-white leading-tight">Контакти закладу</h1>
         <p className="text-xs text-slate-500 max-w-xl mx-auto mt-2.5">
-          Зв’яжіться з представниками ліцею зручним для вас способом або залиште повідомлення у формі зворотного зв’язку.
+          Зв’яжіться з представниками школи зручним для вас способом або залиште повідомлення у формі зворотного зв’язку.
         </p>
       </div>
 
@@ -51,14 +51,14 @@ export const ContactsPage: React.FC = () => {
         {/* Left column: Cards of contact coordinates (5 cols) */}
         <div className="lg:col-span-5 space-y-4">
           <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-150 dark:border-slate-800 shadow-xs space-y-5">
-            <h3 className="font-bold text-sm text-slate-900 dark:text-white font-display uppercase tracking-wider pb-2 border-b">Реквізити ліцею</h3>
+            <h3 className="font-bold text-sm text-slate-900 dark:text-white font-display uppercase tracking-wider pb-2 border-b">Реквізити школи</h3>
             
             <div className="space-y-4 text-xs font-light">
               <div className="flex items-start gap-3.5">
                 <MapPin className="w-5 h-5 text-school-blue-600 shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-slate-850 dark:text-white mb-0.5">Поштова адреса</h4>
-                  <p className="text-slate-500">вул. Шкільна, 4, с. Павлівка, Іваничівський р-н, Волинська область, 45342, Україна.</p>
+                  <p className="text-slate-500">вул. Шкільна, 4, с. Павлів, Червоноградський р-н, Львівська область, 45342, Україна.</p>
                 </div>
               </div>
 
@@ -91,7 +91,7 @@ export const ContactsPage: React.FC = () => {
           {/* Social integration widget info */}
           <div className="bg-slate-900 text-white p-5 rounded-2xl space-y-3.5 border border-slate-800">
             <h4 className="font-bold text-xs uppercase tracking-wide font-display text-school-yellow-400">Ми в цифровому суспільстві</h4>
-            <p className="text-[11px] text-slate-300 leading-relaxed">Підписуйтесь на наші канали та стежте за яскравими відео-анонсами та подіями ліцею.</p>
+            <p className="text-[11px] text-slate-300 leading-relaxed">Підписуйтесь на наші канали та стежте за яскравими відео-анонсами та подіями нашої школи.</p>
             <div className="flex gap-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-xs text-slate-200 hover:text-school-blue-400">
                 <Facebook className="w-4 h-4 shrink-0" />
@@ -116,7 +116,7 @@ export const ContactsPage: React.FC = () => {
               allowFullScreen 
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade" 
-              title="Павлівський ліцей мапа розташування"
+              title="ЗЗСО І-ІІІ ст. с. Павлів мапа розташування"
             />
           </div>
 
@@ -182,7 +182,7 @@ export const ContactsPage: React.FC = () => {
                       className="w-full text-xs px-3.5 py-2 border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-850 rounded-lg text-slate-805 dark:text-slate-105 focus:outline-hidden"
                     >
                       <option value="general">Загальне питання (секретар)</option>
-                      <option value="director">Особисто директору ліцею</option>
+                      <option value="director">Особисто директору школи</option>
                     </select>
                   </div>
                 </div>

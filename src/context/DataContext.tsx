@@ -66,7 +66,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     const localTeachers = localStorage.getItem('school_teachers');
     const localNews = localStorage.getItem('school_news');
-    const localDocs = localStorage.getItem('school_docs');
+    const localDocs = localStorage.getItem('school_docs_v2');
     const localEvents = localStorage.getItem('school_events');
     const localGallery = localStorage.getItem('school_gallery');
     const localSubs = localStorage.getItem('school_submissions');
@@ -145,9 +145,9 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const defaultNews: NewsItem[] = [
         {
           id: 'n1',
-          title: 'Павлівський ліцей урочисто відкриває новий кабінет робототехніки та STEM-освіти',
-          excerpt: 'Завдяки співпраці з громадою та залученню грантових коштів, учні нашого ліцею тепер матимуть змогу конструювати сучасних роботів.',
-          content: 'У нашому закладі відбулося офіційне відкриття сучасного освітнього STEM-простору. Кабінет оснащено 3D-принтерами, найсучаснішими наборами конструкторів Lego Education Spike Prime, датчиками для проведення фізико-хімічних досліджень Vernier та комп’ютерним обладнанням. Директор ліцею відзначив, що це відкриває неймовірні горизонти для творчих дітей, а вчителі інформатики та фізики вже пройшли відповідне сертифікаційне навчання для впровадження новітніх технологій у навчальну програму.',
+          title: 'Заклад загальної середньої освіти І-ІІІ ст. с. Павлів урочисто відкриває новий кабінет робототехніки та STEM-освіти',
+          excerpt: 'Завдяки співпраці з громадою та залученню грантових коштів, учні нашої школи тепер матимуть змогу конструювати сучасних роботів.',
+          content: 'У нашому закладі відбулося офіційне відкриття сучасного освітнього STEM-простору. Кабінет оснащено 3D-принтерами, найсучаснішими наборами конструкторів Lego Education Spike Prime, датчиками для проведення фізико-хімічних досліджень Vernier та комп’ютерним обладнанням. Директор школи відзначив, що це відкриває неймовірні горизонти для творчих дітей, а вчителі інформатики та фізики вже пройшли відповідне сертифікаційне навчання для впровадження новітніх технологій у навчальну програму.',
           category: 'Події',
           imageUrl: 'https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&q=80&w=700',
           date: '2026-06-12',
@@ -155,7 +155,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         },
         {
           id: 'n2',
-          title: 'Учні Павлівського ліцею вибороли призові місця на обласному етапі олімпіади з інформаційних технологій',
+          title: 'Учні Закладу загальної середньої освіти І-ІІІ ст. с. Павлів вибороли призові місця на олімпіадах',
           excerpt: 'Щиро вітаємо наших переможців та їхніх наставників з визначним результатом на регіональному рівні!',
           content: 'Ми пишаємося здобутками наших вихованців! На обласному етапі Всеукраїнської учнівської олімпіади з інформаційних технологій учень 11-А класу Ковальчук Дмитро посів почесне ІІ місце, а учениця 10-Б класу Семенюк Марія виборола ІІІ місце. Підготовкою учнів займався вчитель інформатики Ковальчук Іван Петрович. Бажаємо команді не зупинятися на досягнутому та прагнути підкорення нових наукових вершин!',
           category: 'Досягнення',
@@ -165,9 +165,9 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         },
         {
           id: 'n3',
-          title: 'Організація безпечного простору: у ліцеї облаштовано затишне та безпечне укриття за стандартами ДСНС',
+          title: 'Організація безпечного простору: у школі облаштовано затишне та безпечне укриття за стандартами ДСНС',
           excerpt: 'Безпека під час навчального процесу є першочерговим пріоритетом. Ознайомтеся з облаштуванням та правилами перебування в укритті.',
-          content: 'Адміністрація Павлівського ліцею звітує про 완성лення модернізації цокольного приміщення під сучасне цивільне укриття безпечного типу. Облаштовано зони для відпочинку, навчальні сектора, де інтегровано Wi-Fi мережу для доступу до навчальних матеріалів, санітарні кімнати, медичний куточок з аптечками першої допомоги, великий запас питної води та вентиляційну систему очищення повітря. Стіни прикрасили малюнками учнів для створення позитивного психологічного фону.',
+          content: 'Адміністрація Закладу загальної середньої освіти І-ІІІ ст. с. Павлів звітує про завершення модернізації цокольного приміщення під сучасне цивільне укриття безпечного типу. Облаштовано зони для відпочинку, навчальні сектора, де інтегровано Wi-Fi мережу для доступу до навчальних матеріалів, санітарні кімнати, медичний куточок з аптечками першої допомоги, великий запас питної води та вентиляційну систему очищення повітря. Стіни прикрасили малюнками учнів для створення позитивного психологічного фону.',
           category: 'Оголошення',
           imageUrl: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&q=80&w=700',
           date: '2026-05-15',
@@ -177,7 +177,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
           id: 'n4',
           title: 'Родинний екологічний фестиваль «Зелені серця Павлова» об’єднав понад 300 учасників',
           excerpt: 'Спільне висаджування дерев, збір вторинної сировини та благодійний ярмарок на підтримку ландшафтного парку.',
-          content: 'У суботу на подвір’ї ліцею пройшов масштабний захід, присвячений захисту довкілля та здоровому способу життя. Спільно учні, батьки та педагоги висадили понад 45 нових туй і декоративних кущів навколо спортивного майданчика. В межах фестивалю відбувся благодійний ярмарок домашньої випічки, під час якого зібрано 15 400 грн. Весь прибуток буде передано на придбання ліків для місцевих ветеранів та військовослужбовців на Сході.',
+          content: 'У суботу на подвір’ї школи пройшов масштабний захід, присвячений захисту довкілля та здоровому способу життя. Спільно учні, батьки та педагоги висадили понад 45 нових туй і декоративних кущів навколо спортивного майданчика. В межах фестивалю відбувся благодійний ярмарок домашньої випічки, під час якого зібрано 15 400 грн. Весь прибуток буде передано на придбання ліків для місцевих ветеранів та військовослужбовців на Сході.',
           category: 'Події',
           imageUrl: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&q=80&w=700',
           date: '2026-04-20',
@@ -194,7 +194,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const defaultDocs: SchoolDocument[] = [
         {
           id: 'd1',
-          title: 'Статут Павлівського ліцею Волинської області (Нова редакція 2024)',
+          title: 'Статут Закладу загальної середньої освіти І-ІІІ ст. с. Павлів Львівської області (Нова редакція 2024)',
           category: 'statut',
           fileUrl: 'https://docs.google.com/document/d/1X50K1_A_example_statut/view',
           dateAdded: '2024-09-01',
@@ -210,7 +210,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         },
         {
           id: 'd3',
-          title: 'Освітня програма ліцею на 2025/2026 навчальний рік (Початкова, Базова та Профільна ланка)',
+          title: 'Освітня програма школи на 2025/2026 навчальний рік (Початкова, Базова та Профільна ланка)',
           category: 'programs',
           fileUrl: 'https://docs.google.com/document/d/1Z_example_program/view',
           dateAdded: '2025-08-28',
@@ -242,7 +242,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
       ];
       setDocuments(defaultDocs);
-      localStorage.setItem('school_docs', JSON.stringify(defaultDocs));
+      localStorage.setItem('school_docs_v2', JSON.stringify(defaultDocs));
     }
 
     if (localEvents) {
@@ -251,7 +251,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const defaultEvents: EventItem[] = [
         {
           id: 'e1',
-          title: 'Урочисті збори ліцею та Свято Останнього Дзвоника',
+          title: 'Урочисті збори школи та Свято Останнього Дзвоника',
           date: '2026-06-19',
           time: '09:00',
           description: 'Святковий захід, присвячений закінченню навчального року. Особливі вітання 11-класникам!',
@@ -270,7 +270,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
           title: 'Початок прийому заяв до 1-го класу на 2026/2027 рік',
           date: '2026-06-25',
           time: '08:30',
-          description: 'Подача документів у кабінет секретаря ліцею за затвердженим переліком.',
+          description: 'Подача документів у кабінет секретаря школи за затвердженим переліком.',
           category: 'general'
         },
         {
@@ -278,7 +278,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
           title: 'Психологічний практикум для батьків майбутніх першокласників «Упевнений старт»',
           date: '2026-06-30',
           time: '17:00',
-          description: 'Зустріч з практичним психологом у ліцейному STEM-хабі з приводу адаптації дитини.',
+          description: 'Зустріч з практичним психологом у шкільному STEM-хабі з приводу адаптації дитини.',
           category: 'meeting'
         }
       ];
@@ -290,13 +290,13 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
       setGallery(JSON.parse(localGallery));
     } else {
       const defaultGallery: GalleryItem[] = [
-        { id: 'g1', title: 'Сучасна Будівля Павлівського ліцею здалеку', type: 'photo', url: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600', album: 'Наш Ліцей' },
+        { id: 'g1', title: 'Сучасна Будівля ЗЗСО І-ІІІ ст. с. Павлів здалеку', type: 'photo', url: 'https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&q=80&w=600', album: 'Наш заклад' },
         { id: 'g2', title: 'Урок фізики у новому STEM класі', type: 'photo', url: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=600', album: 'Навчальний Процес' },
-        { id: 'g3', title: 'Шкільна бібліотека з медіатекою', type: 'photo', url: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=600', album: 'Наш Ліцей' },
-        { id: 'g4', title: 'Футбольний матч на штучному майданчику ліцею', type: 'photo', url: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=600', album: 'Спорт та Дозвілля' },
+        { id: 'g3', title: 'Шкільна бібліотека з медіатекою', type: 'photo', url: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=600', album: 'Наша школа' },
+        { id: 'g4', title: 'Футбольний матч на штучному майданчику школи', type: 'photo', url: 'https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=600', album: 'Спорт та Дозвілля' },
         { id: 'g5', title: 'Благодійний осінній ярмарок біля школи', type: 'photo', url: 'https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=600', album: 'Свята та Фестивалі' },
         { id: 'g6', title: 'Творчий виступ нашої вокальної студії', type: 'photo', url: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=600', album: 'Свята та Фестивалі' },
-        { id: 'g7', title: 'Офіційна Відеопрезентація Павлівського Ліцею', type: 'video', url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', album: 'Відеоархів' }
+        { id: 'g7', title: 'Офіційна Відеопрезентація ЗЗСО І-ІІІ ст. с. Павлів', type: 'video', url: 'https://www.youtube.com/embed/dQw4w9WgXcQ', album: 'Відеоархів' }
       ];
       setGallery(defaultGallery);
       localStorage.setItem('school_gallery', JSON.stringify(defaultGallery));

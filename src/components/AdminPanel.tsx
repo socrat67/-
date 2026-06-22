@@ -156,7 +156,7 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ isOpen, onClose }) => {
           <div className="flex-1 flex items-center justify-center p-8 bg-slate-50 dark:bg-slate-950">
             <form onSubmit={handleLogin} className="bg-white dark:bg-slate-900 p-8 rounded-xl shadow-lg max-w-sm w-full border border-slate-100 dark:border-slate-800">
               <h3 className="text-lg font-bold mb-4 font-display text-slate-800 dark:text-slate-100 text-center">Цей розділ потребує паролю доступу</h3>
-              <p className="text-xs text-slate-500 mb-6 text-center">Будь ласка, введіть ваші реквізити для керування новинами, вчителями та документами ліцею.</p>
+              <p className="text-xs text-slate-500 mb-6 text-center">Будь ласка, введіть ваші реквізити для керування новинами, вчителями та документами закладу.</p>
               
               <div className="space-y-4 mb-6">
                 <div>
