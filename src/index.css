@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* High-contrast premium palette matching Ukrainian scholastic colors (deep royal blue & golden yellow) */
+  --color-school-blue-50: #f4f8fd;
+  --color-school-blue-100: #e3effc;
+  --color-school-blue-200: #c1defe;
+  --color-school-blue-500: #0056b3;
+  --color-school-blue-600: #004494;
+  --color-school-blue-700: #003370;
+  --color-school-blue-800: #0a2540;
+  --color-school-blue-900: #051424;
+  --color-school-yellow-50: #fffdf5;
+  --color-school-yellow-105: #fef7da;
+  --color-school-yellow-300: #ffea70;
+  --color-school-yellow-400: #ffd700;
+  --color-school-yellow-500: #e5be00;
+  --color-school-yellow-600: #cca300;
+}
+
+body {
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  background-color: #f8fafc; /* Cool warm slate */
+}
+
+/* Dark mode override */
+.dark body {
+  background-color: #030712; /* Deep charcoal dark */
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Bento Cards Styling */
+.bento-card {
+  @apply relative overflow-hidden bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/85 rounded-3xl p-6 transition-all duration-300 shadow-xs hover:shadow-md hover:scale-[1.01] hover:border-slate-300 dark:hover:border-slate-700 flex flex-col justify-between;
+}
+
+.bento-card-interactive {
+  @apply relative overflow-hidden bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800/85 rounded-3xl p-6 transition-all duration-300 shadow-xs hover:shadow-md hover:scale-[1.01] hover:border-slate-300 dark:hover:border-slate-700 flex flex-col justify-between cursor-pointer hover:bg-slate-50 dark:hover:bg-slate-800/50;
+}
+
+.bento-badge {
+  @apply inline-flex items-center space-x-1 py-1 px-2.5 rounded-full text-[10px] font-bold uppercase tracking-wider leading-none;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
